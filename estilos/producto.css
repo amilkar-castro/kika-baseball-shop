@@ -1,0 +1,506 @@
+/*cosas globales y fuentes*/
+
+/* Forzar la ocultación del contenedor de la insignia de Netlify */
+#netlify-badge, 
+.netlify-badge, 
+div[class*="netlify"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+@font-face {
+    font-family: "league-spartan";
+    src: url("../fuentes/league-spartan-regular.ttf");
+}
+
+@font-face {
+    font-family: "open-sans";
+    src: url("../fuentes/open-sans-regular.ttf");
+}
+
+@font-face {
+    font-family: "raleway";
+    src: url("../fuentes/raleway-regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #ffffff;
+    color: #0d2948;
+    font-family: "league-spartan";
+}
+
+
+/*header*/
+
+header{
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 55px;
+    border-bottom: 1px solid #eeeeee;
+    background-color: white;
+}
+
+
+/*logo*/
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-imagen{
+    width: 75px;
+    height: 75px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-imagen img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.logo-texto{
+    font-size: 25px;
+    font-weight: bold;
+    color: #0d2948;
+}
+
+
+/*menu*/
+
+nav{
+    display: flex;
+    gap: 38px;
+    height: 100%;
+    align-items: center;
+}
+
+nav a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #0d2948;
+    font-size: 18px;
+    font-family: "open-sans";
+}
+
+nav a.activo{
+    border-bottom: 3px solid #d62b2b;
+}
+
+
+/*iconos*/
+
+.iconos{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.icono{
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icono img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+
+/*ruta de navegación*/
+
+.ruta{
+    padding: 20px 55px 10px;
+}
+
+.ruta a{
+    color: #0d2948;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+.ruta a:hover{
+    color: #d62b2b;
+}
+
+
+/*detalle del producto*/
+
+.detalle{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 10px 55px 40px;
+}
+
+.detalle-imagen{
+    height: 420px;
+    border: 1px solid #dfe3e7;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.detalle-imagen img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.detalle-info h1{
+    font-size: 34px;
+    margin-bottom: 6px;
+}
+
+.detalle-info .liga{
+    font-size: 15px;
+    margin-bottom: 14px;
+}
+
+.detalle-info .precio{
+    font-size: 28px;
+    font-weight: bold;
+    color: #d62b2b;
+    margin-bottom: 18px;
+}
+
+.detalle-info .descripcion{
+    font-size: 15px;
+    line-height: 1.5;
+    max-width: 450px;
+    margin-bottom: 20px;
+}
+
+.detalle-info h3{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+
+/*tallas*/
+
+.tallas{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.tallas button{
+    width: 45px;
+    padding: 9px 0;
+    background-color: white;
+    border: 1px solid #aeb8c2;
+    border-radius: 3px;
+    color: #0d2948;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.tallas button:hover{
+    background-color: #e9edf1;
+}
+
+.tallas .talla-activa{
+    background-color: #0d2948;
+    border-color: #0d2948;
+    color: white;
+}
+
+
+/*cantidad*/
+
+.detalle-info select{
+    width: 80px;
+    padding: 8px 10px;
+    margin-bottom: 25px;
+    border: 1px solid #aeb8c2;
+    background-color: white;
+    color: #0d2948;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+
+/*boton agregar*/
+
+.boton-agregar{
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    padding: 14px 5px;
+    border: none;
+    background-color: #d62b2b;
+    color: white;
+    font-size: 15px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.boton-agregar:hover{
+    background-color: #b82323;
+}
+
+
+/*pie footer*/
+
+footer{
+    background-color: #102a45;
+    color: white;
+    padding: 25px 55px 0;
+}
+
+.footer-contenedor{
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+    gap: 35px;
+    padding-bottom: 20px;
+}
+
+.footer-logo h2{
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.footer-logo p{
+    font-size: 13px;
+}
+
+.footer-logo-imagen{
+    display: none;
+}
+
+.footer-columna h3{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.footer-columna p{
+    font-size: 12px;
+    line-height: 1.5;
+    max-width: 210px;
+}
+
+.footer-columna a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.redes{
+    display: flex;
+    gap: 10px;
+}
+
+.red{
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.red img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.pagos{
+    display: flex;
+    gap: 8px;
+}
+
+.pago{
+    width: 45px;
+    height: 27px;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pago img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.copyright{
+    border-top: 1px solid #8793a0;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 12px;
+}
+
+.producto-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*menu hamburguesa (oculto en pantallas grandes, lo controla js/menu.js)*/
+
+.hamburguesa{
+    display: none;
+    border: 0;
+    background: transparent;
+}
+
+
+@media (max-width: 1000px){
+    .ruta{ padding: 20px 30px 10px; }
+    .detalle{ padding: 10px 30px 40px; gap: 25px; }
+    .detalle-imagen{ height: 360px; }
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+img{
+    max-width: 100%;
+}
+
+@media (max-width: 1100px){
+    header{ padding: 0 30px; }
+    nav{ gap: 22px; }
+    nav a{ font-size: 16px; }
+    .logo-texto{ font-size: 22px; }
+    footer{ padding: 25px 30px 0; }
+}
+
+@media (max-width: 900px){
+    header{ gap: 12px; }
+
+    /* hamburguesa visible */
+    .hamburguesa{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        order: 3;
+    }
+    .hamburguesa span{
+        display: block;
+        width: 24px;
+        height: 3px;
+        background-color: #0d2948;
+        transition: transform 0.2s, opacity 0.2s;
+    }
+    .hamburguesa:focus-visible{
+        outline: 2px solid #d62b2b;
+        outline-offset: 2px;
+    }
+    .hamburguesa[aria-expanded="true"] span:nth-child(1){ transform: translateY(8px) rotate(45deg); }
+    .hamburguesa[aria-expanded="true"] span:nth-child(2){ opacity: 0; }
+    .hamburguesa[aria-expanded="true"] span:nth-child(3){ transform: translateY(-8px) rotate(-45deg); }
+
+    .iconos{ margin-left: auto; order: 2; }
+
+    /* el menú se vuelve un panel desplegable */
+    nav{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        height: auto;
+        background-color: white;
+        border-bottom: 1px solid #dfe3e7;
+        box-shadow: 0 6px 10px rgba(13, 41, 72, 0.12);
+        padding: 5px 30px 10px;
+    }
+    nav.abierto{ display: flex; }
+    nav a, nav a.activo{
+        height: auto;
+        padding: 14px 0;
+        border-bottom: 1px solid #eeeeee;
+        font-size: 17px;
+    }
+    nav a.activo{
+        border-left: 4px solid #d62b2b;
+        padding-left: 12px;
+    }
+    nav a:last-child{ border-bottom: none; }
+
+    .footer-contenedor{ grid-template-columns: 1fr 1fr; gap: 25px; }
+    .footer-columna p{ max-width: none; }
+}
+
+@media (max-width: 700px){
+    header{ height: 75px; padding: 0 20px; }
+    .logo{ gap: 10px; }
+    .logo-imagen{ width: 55px; height: 55px; }
+    .logo-texto{ font-size: 19px; line-height: 1.1; }
+    nav{ padding: 5px 20px 10px; }
+    footer{ padding: 25px 20px 0; }
+    header{ position: relative; z-index: 100; }
+    .ruta{ padding: 15px 20px 5px; }
+    .detalle{ grid-template-columns: 1fr; padding: 10px 20px 30px; gap: 20px; }
+    .detalle-imagen{ height: 300px; padding: 15px; }
+    .detalle-info h1{ font-size: 28px; }
+    .detalle-info .precio{ font-size: 24px; }
+    .detalle-info .descripcion{ max-width: none; }
+
+}
+
+@media (max-width: 480px){
+    header{ gap: 8px; }
+    .logo-imagen{ width: 46px; height: 46px; }
+    .logo-texto{ font-size: 16px; max-width: 105px; }
+    .icono{ width: 26px; height: 26px; }
+    .iconos{ gap: 10px; }
+    .hamburguesa{ width: 36px; height: 36px; }
+    .footer-contenedor{ grid-template-columns: 1fr; }
+    .detalle-imagen{ height: 240px; }
+    .tallas{ flex-wrap: wrap; }
+    .boton-agregar{ max-width: none; }
+
+}
+
+@media (max-width: 360px){
+    .logo-imagen{ width: 38px; height: 38px; }
+    .logo-texto{ font-size: 14px; max-width: 85px; }
+    .iconos{ gap: 7px; }
+    .icono{ width: 24px; height: 24px; }
+}
+
+@media (max-width: 900px){ header{ position: relative; z-index: 100; } }

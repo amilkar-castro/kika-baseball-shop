@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Kika Baseball Shop</title>
+    <link rel="stylesheet" href="estilos/catalogo.css">
+</head>
+
+<body>
+
+    <!--header-->
+    <header>
+        <a href="index.html" class="producto-link">
+            <div class="logo">
+                <div class="logo-imagen">
+                    <img src="imagenes/logo-kika.webp" alt="Logo de Kika Baseball Shop">
+                </div>
+                <div class="logo-texto">
+                    Kika Baseball Shop
+                </div>
+            </div>
+        </a>
+
+        <button class="hamburguesa" id="hamburguesa" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+        <nav id="menu">
+            <a href="index.html">Inicio</a>
+            <a href="#" class="activo">Catálogo</a>
+            <a href="#">Categorías</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Contacto</a>
+        </nav>
+
+
+        <div class="iconos">
+            <div class="icono">
+                <img src="iconos/buscar.png" alt="Buscar">
+            </div>
+            <div class="icono">
+                <img src="iconos/usuario.png" alt="Mi cuenta">
+            </div>
+            <div class="icono">
+                <img src="iconos/carrito.png" alt="Carrito">
+            </div>
+        </div>
+
+    </header>
+
+
+    <!--banner-->
+    <section class="banner">
+        <picture>
+            <source media="(max-width: 768px)" srcset="imagenes/banner-catalogo-small.jpg">
+            <img src="imagenes/banner-catalogo.png" alt="Catálogo: todos los equipos">
+        </picture>
+    </section>
+
+
+    <!--filtros-->
+    <section class="filtros">
+        <div class="botones-filtro">
+            <button class="filtro-activo">Todos</button>
+            <button>MLB</button>
+            <button>LMB</button>
+            <button>LMP</button>
+        </div>
+
+
+        <select>
+            <option>Ordenar por: Más recientes</option>
+            <option>Ordenar por: Menor precio</option>
+            <option>Ordenar por: Mayor precio</option>
+        </select>
+    </section>
+
+
+    <!--productos-->
+    <main class="catalogo">
+
+        <a href="productos/dodgers.html" class="producto-link">
+        <div class="producto">
+            <div class="producto-imagen">
+                <img src="imagenes/dodgers.webp" alt="Jersey Dodgers">
+            </div>
+                <div class="producto-info">
+                    <h3>Dodgers</h3>
+                    <p class="liga">MLB</p>
+                    <p class="precio">$1,499 MXN</p>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+        </a>
+
+        <a href="productos/yankees.html" class="producto-link">
+        <div class="producto">
+            <div class="producto-imagen">
+                <img src="imagenes/yankees.webp" alt="Jersey Yankees">
+            </div>
+                <div class="producto-info">
+                    <h3>Yankees</h3>
+                    <p class="liga">MLB</p>
+                    <p class="precio">$1,499 MXN</p>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+        </a>
+
+        <a href="productos/padres.html" class="producto-link">
+        <div class="producto">
+            <div class="producto-imagen">
+                <img src="imagenes/padres.webp" alt="Jersey Padres">
+            </div>
+                <div class="producto-info">
+                    <h3>Padres</h3>
+                    <p class="liga">MLB</p>
+                    <p class="precio">$1,499 MXN</p>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+        </a>
+
+        <a href="productos/angels.html" class="producto-link">
+        <div class="producto">
+            <div class="producto-imagen">
+                <img src="imagenes/angels.webp" alt="Jersey Angels">
+            </div>
+                <div class="producto-info">
+                    <h3>Angels</h3>
+                    <p class="liga">MLB</p>
+                    <p class="precio">$1,499 MXN</p>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+        </a>
+
+        <a href="productos/venados.html" class="producto-link">
+        <div class="producto">
+            <div class="producto-imagen">
+                <img src="imagenes/venados.webp" alt="Jersey Venados de Mazatlán">
+            </div>
+                <div class="producto-info">
+                    <h3>Venados de Mazatlán</h3>
+                    <p class="liga">LMP</p>
+                    <p class="precio">$1,399 MXN</p>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+        </a>
+
+        <a href="productos/naranjeros.html" class="producto-link">
+        <div class="producto">
+            <div class="producto-imagen">
+                <img src="imagenes/naranjeros.webp" alt="Jersey Naranjeros de Hermosillo">
+            </div>
+                <div class="producto-info">
+                    <h3>Naranjeros de Hermosillo</h3>
+                    <p class="liga">LMP</p>
+                    <p class="precio">$1,399 MXN</p>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+        </a>
+
+        <a href="productos/guasave.html" class="producto-link">
+        <div class="producto">
+            <div class="producto-imagen">
+                <img src="imagenes/guasave.webp" alt="Jersey Algodoneros de Guasave">
+            </div>
+                <div class="producto-info">
+                    <h3>Algodoneros de Guasave</h3>
+                    <p class="liga">LMP</p>
+                    <p class="precio">$1,399 MXN</p>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+        </a>
+
+        <a href="productos/caneros.html" class="producto-link">
+        <div class="producto">
+            <div class="producto-imagen">
+                <img src="imagenes/caneros.webp" alt="Jersey Cañeros de Los Mochis">
+            </div>
+                <div class="producto-info">
+                    <h3>Cañeros de Los Mochis</h3>
+                    <p class="liga">LMP</p>
+                    <p class="precio">$1,399 MXN</p>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+        </a>
+
+        <a href="productos/diablos.html" class="producto-link">
+        <div class="producto">
+            <div class="producto-imagen">
+                <img src="imagenes/diablos.webp" alt="Jersey Diablos Rojos del México">
+            </div>
+                <div class="producto-info">
+                    <h3>Diablos Rojos del México</h3>
+                    <p class="liga">LMB</p>
+                    <p class="precio">$1,399 MXN</p>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+        </a>
+
+        <a href="productos/sultanes.html" class="producto-link">
+        <div class="producto">
+            <div class="producto-imagen">
+                <img src="imagenes/sultanes.webp" alt="Jersey Sultanes de Monterrey">
+            </div>
+                <div class="producto-info">
+                    <h3>Sultanes de Monterrey</h3>
+                    <p class="liga">LMB</p>
+                    <p class="precio">$1,399 MXN</p>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+        </a>
+
+        <a href="productos/laguna.html" class="producto-link">
+        <div class="producto">
+            <div class="producto-imagen">
+                <img src="imagenes/laguna.webp" alt="Jersey Algodoneros de Unión Laguna">
+            </div>
+                <div class="producto-info">
+                    <h3>Algodoneros de Unión Laguna</h3>
+                    <p class="liga">LMB</p>
+                    <p class="precio">$1,399 MXN</p>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+        </a>
+
+        <a href="productos/pericos.html" class="producto-link">
+        <div class="producto">
+            <div class="producto-imagen">
+                <img src="imagenes/pericos.webp" alt="Jersey Pericos de Puebla">
+            </div>
+                <div class="producto-info">
+                    <h3>Pericos de Puebla</h3>
+                    <p class="liga">LMB</p>
+                    <p class="precio">$1,399 MXN</p>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+        </a>
+
+    </main>
+
+
+    <!--pie de página-->
+    <footer>
+        <div class="footer-contenedor">
+            <div class="footer-logo">
+                <h2>Kika Baseball Shop</h2>
+                <p>Pasión por el béisbol.</p>
+            </div>
+
+            <div class="footer-columna">
+                <h3>Sobre nosotros</h3>
+                <p>
+                    Somos una tienda en línea dedicada
+                    a los amantes del beisbol. Ofrecemos
+                    los mejores jerseys de tus equipos
+                    favoritos.
+                </p>
+            </div>
+
+            <div class="footer-columna">
+                <h3>Enlaces</h3>
+
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="#">Categorías</a>
+                <a href="#">Contacto</a>
+            </div>
+
+            <div class="footer-columna">
+                <h3>Síguenos</h3>
+                <div class="redes">
+                    <div class="red">
+                        <img src="iconos/facebook.png" alt="Facebook">
+                    </div>
+
+                    <div class="red">
+                        <img src="iconos/instagram.png" alt="Instagram">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-columna">
+                <h3>Métodos de pago</h3>
+
+                <div class="pagos">
+                    <div class="pago">
+                        <img src="iconos/visa.webp" alt="Visa">
+                    </div>
+
+                    <div class="pago">
+                        <img src="iconos/mastercard.webp" alt="Mastercard">
+                    </div>
+                    
+                    <div class="pago">
+                        <img src="iconos/paypal.webp" alt="PayPal">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+            © 2026 Kika Baseball Shop. Todos los derechos reservados
+        </div>
+
+    </footer>
+    <script src="js/menu.js"></script>
+</body>
+</html>
